@@ -1041,6 +1041,15 @@
              });
          });
          // --------------------------------------------------
+         $(function() {
+
+            $('[data-toggle="modal"]').hover(function() {
+              var modalId = $(this).data('target');
+              $(modalId).modal('show');
+          
+            });
+          
+          });
          // portfolio hover
          // --------------------------------------------------
          jQuery('.overlay').fadeTo(1, 0);
