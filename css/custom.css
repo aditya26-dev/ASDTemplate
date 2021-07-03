@@ -1,0 +1,123 @@
+.medpar-sponsor-class {
+    display: flex;
+}
+
+.medpar-sponsor-class>div {
+    padding: 0 5px;
+}
+
+.de-image-hover:hover {
+    box-shadow: none;
+}
+
+.newsletter-button {
+    background-color: #1c3678;
+    font-family: "Jost", Helvetica, Arial, sans-serif;
+    border-radius: 6px;
+    margin-top: -20px;
+    border: 0;
+}
+
+.newsletter-inside {
+    background-image: url("/images/grass-background.png");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 120% !important;
+    padding-bottom: 60px;
+    margin-bottom: -2px;
+}
+
+.newsletter-button:hover {
+    background-color: #112350;
+}
+
+.newsletter-button:active {
+    background-color: #112350 !important;
+}
+
+.newsletter-button:focus {
+    background-color: #112350 !important;
+    border-color: #112350 !important;
+    box-shadow: 0 0 0 0.2rem #1123508a;
+}
+
+.rumah>image:last-child {
+    transition: none;
+}
+
+.rumah>image:last-child:hover {
+    transform: none;
+}
+
+.rumah>div>img {
+    transition: all .2s ease-in-out;
+}
+
+.rumah>div>img:hover {
+    transform: scale(1.1);
+}
+
+.box-battle {
+    transition: 3s all ease-in-out;
+}
+
+.box-battle>img {
+    transition: .7s;
+}
+
+.box-battle:hover>img {
+    transform: rotate(25deg);
+    transition: 2s ease;
+}
+
+.rumah1 {
+    max-width: 10%;
+    position: absolute;
+    z-index: 2;
+    top: 68%;
+    left: 23%;
+}
+
+.rumah1>div {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    transform: translate(50%, -32%);
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    width: 320px;
+    text-align: left;
+    z-index: 3;
+}
+
+.map-card-content > p{
+    color: black;
+
+}
+
+.map-card-content > h3{
+    color: black;
+    margin-bottom: 10px;
+}
+
+.rumah1:hover>div {
+    visibility: visible;
+    opacity: 100%;
+    transform: translate(60%, -32%);
+}
+
+/* sementara hanya untuk mengehentikan newsletter*/
+
+#myModal {
+    display: none !important;
+}
+
+.modal-backdrop {
+    display: none !important;
+}
+
+/* endline sementara hanya untuk mengehentikan newsletter */

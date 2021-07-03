@@ -23,22 +23,39 @@
     <link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
     <link href="css/jquery.countdown.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
     <link href="css/coloring.css" rel="stylesheet" type="text/css">
 </head>
 
+<style>
+    #rumah1{
+        display: none;
+    }
+</style>
+
 <body>
         <!-- header begin -->
-        <header class="transparent">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="de-flex sm-pt10">
-                            <div class="de-flex-col header-col-mid">
+        <header class="transparent clone" style="height: 90px;">
+            <div class="container" style="background-size: cover;">
+                <div class="row" style="background-size: cover;">
+                    <div class="col-md-12" style="background-size: cover;">
+                        <div class="de-flex sm-pt10" style="background-size: cover;">
+                            <div class="de-flex-col" style="background-size: cover;">
+                                <!-- logo begin -->
+                                <div id="logo" style="background-size: cover;">
+                                    <a href="index.html">
+                                        <img alt="" class="logo" src="images/logo-light.png">
+                                        <img alt="" class="logo-2" src="images/logo.png">
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+                            <div class="de-flex-col header-col-mid" style="background-size: cover;">
                                 <!-- mainmenu begin -->
                                 <ul id="mainmenu">
-                                    <li><a href="#home">Home</a>
+                                    <li><a href="index.html">Home</a><span></span>
                                         <ul>
                                             <li><a href="index.html">Homepage 1</a></li>
                                             <li><a href="index-2.html">Homepage 2</a></li>
@@ -47,27 +64,27 @@
                                             <li><a href="index-5.html">Homepage 5</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="about.html">About</a>
+                                    <li><a href="about.html">About</a><span></span>
                                         <ul>
                                             <li><a href="about.html">About Us</a></li>
                                             <li><a href="team.html">The Team</a></li>
                                             <li><a href="faq.html">FAQ</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="practice-areas.html">Practice Areas</a>
+                                    <li><a href="practice-areas.html">Practice Areas</a><span></span>
                                         <ul>
                                             <li><a href="practice-areas.html">Practice Areas 1</a></li>
                                             <li><a href="practice-areas-2.html">Practice Areas 2</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="news.html">News</a>
+                                    <li><a href="news.html">News</a><span></span>
                                         <ul>
                                             <li><a href="news.html">News List</a></li>
                                             <li><a href="news-single.html">News Single</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="contact.html">Contact</a></li>
-                                     <li><a href="#">Elements</a>
+                                     <li><a href="#">Elements</a><span></span>
                                         <ul>
                                             <li><a href="accordion.html">Accordion</a></li>
                                             <li><a href="alerts.html">Alerts</a></li>
@@ -83,6 +100,10 @@
                                     </li>
                                 </ul>
                                 <!-- mainmenu close -->
+                            </div>
+                            <div class="de-flex-col" style="background-size: cover;">
+                                <div class="h-phone md-hide" style="background-size: cover;"><span>Need&nbsp;Help?</span><i class="fa fa-phone"></i> 1 200 300 9000</div>
+                                <span id="menu-btn" style="display: none;"></span>
                             </div>
                         </div>
                     </div>
@@ -161,20 +182,18 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Subscribe our Newsletter</h5>
+                                <h5 class="modal-title" style="font-size: 24px">CALLING AGENTS!</h5>
                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
                             </div>
-                            <div class="modal-body">
-                                <p>Subscribe to our mailing list to get the latest updates straight in your inbox.</p>
-                                <form>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
+                            <div class="modal-body newsletter-inside">
+                                <p style="color: black; font-size: 18px;">Help me save <span style="color: #ffb026; font-weight: bold;">META</span> and there will be <span style="color: #92e083; font-weight: bold;">CASH REWARDS</span> that awaits you</p>
+                                <div style="display: flex; justify-content: space-evenly;">
+                                    <img style="max-width: 240px; max-height: 240px; min-width: 180px; min-height: 180px;" src="images/help-wanted.png">
+                                    <div style="display: flex; flex-direction: column;">
+                                        <img style="max-width: 150px; max-height: 150px;" src="images/help-meta.png">
+                                        <button type="button" class="btn btn-secondary newsletter-button"><span style="font-size: 12px;">(CLICK HERE)</span><br><span style="font-weight: bold; font-size: 18px">BATTLE TO<br>SAVE META!</span></button>
                                     </div>
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email Address">
-                                    </div>
-                                    <button type="submit" class="btn btn-primary">Subscribe</button>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -210,12 +229,13 @@
                         </div>
                         <div class="col-lg-4 col-md-6">
                             <a href="#">
-                            <div class="feature-box f-boxed style-3 text-center">
+                            <div class="feature-box f-boxed style-3 text-center box-battle" style="z-index: 2;">
                                 <i class="icofont-hand-power"></i>
                                 <div class="text">
                                     <h4>Battle</h4>
                                 </div>
                                 <i class="wm icofont-hand-power"></i>
+                                <img src="images/help-wanted.png" style="width: 200px; height: 200px; bottom: -30px; opacity: 1; z-index: -1; position: absolute; left: -50px;"></img>
                             </div>
                             </a>
                         </div>
@@ -293,27 +313,37 @@
                     <div class="col text-center">
                         <h1>About Us</h1>
                         <div class="row justify-content-center">
-                            <div class="col-md-2 mb30">
+                            <div class="col-md mb30">
                                 <div class="de-image-hover rounded">
                                         <img src="images/news/1.jpg" class="img-fluid" alt="">
                                 </div>
                             </div>
-                            <div class="col-md-2 mb30">
+                            <div class="col-md mb30">
                                 <div class="de-image-hover rounded">
                                         <img src="images/news/1.jpg" class="img-fluid" alt="">
                                 </div>
                             </div>
-                            <div class="col-md-2 mb30">
+                            <div class="col-md mb30">
                                 <div class="de-image-hover rounded">
                                         <img src="images/news/1.jpg" class="img-fluid" alt="">
                                 </div>
                             </div>
-                            <div class="col-md-2 mb30">
+                            <div class="col-md mb30">
                                 <div class="de-image-hover rounded">
                                         <img src="images/news/1.jpg" class="img-fluid" alt="">
                                 </div>
                             </div>
-                            <div class="col-md-2 mb30">
+                            <div class="col-md mb30">
+                                <div class="de-image-hover rounded">
+                                        <img src="images/news/1.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md mb30">
+                                <div class="de-image-hover rounded">
+                                        <img src="images/news/1.jpg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md mb30">
                                 <div class="de-image-hover rounded">
                                         <img src="images/news/1.jpg" class="img-fluid" alt="">
                                 </div>
@@ -340,6 +370,31 @@
                             <a href="#" class="btn-custom btn-black light">Make Appointment</a>
                         </div>
                     </div>
+                    <div class="col text-center rumah" style="position: relative">
+                        <div class="rumah1" style="">
+                            <img src="images/rumah1.png" style="width: 100%;">
+                            <div class="map-card-content">
+                                <h3>BOOT CAMP</h1>
+                                <p>This is exploration arena for those who wants to be trained and forged for the next journey.</p>
+                            </div>
+                        </div>
+                        <div style="max-width: 10%; position: absolute; z-index: 2; top: 39%; left: 26%;">
+                            <img src="images/rumah2.png" style="width: 100%;">
+                        </div>
+
+                        
+                        
+                        <img style="max-width: 10%; position: absolute; z-index: 2; top: 25%; left: 31%;" src="images/rumah3.png">
+                        <img style="max-width: 10%; position: absolute; z-index: 2; top: 22%; left: 43%;" src="images/rumah4.png">
+                        <img style="max-width: 10%; position: absolute; z-index: 2; top: 41%; left: 44%;" src="images/rumah5.png">
+                        <img style="max-width: 10%; position: absolute; z-index: 2; top: 36%; left: 62%;" src="images/rumah6.png">
+                        <img style="max-width: 10%; position: absolute; z-index: 2; top: 57%; left: 53%;" src="images/rumah7.png">
+                        <img style="max-width: 10%; position: absolute; z-index: 2; top: 50%; left: 66%;" src="images/rumah8.png">
+                        <img style="max-width: 100%; visibility: hidden;" src="images/background_map.png">
+                        <img style="max-width: 100%; position: absolute; left: 0; top: 0; z-index: 1;" src="images/background_map.png">
+                        <!-- <embed id="svg1" src="images/Map ASD.svg" style="max-width: 100%;"> -->
+                            
+                        </div>
                 </div>
             </section>
             <section>
@@ -452,18 +507,18 @@
                             </div>
                             <div class="col-md-5 mb30">
                                 <h1>Medpar and Sponsor</h1>
-                                <div class="de-flex-col">
-                                    <div class="col-2 mb30">
+                                <div class="de-flex-col medpar-sponsor-class" style="display: flex;">
+                                    <div class="col-2">
                                         <div class="de-image-hover rounded">
                                                 <img src="images/news/1.jpg" class="img-fluid" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-2 mb30">
+                                    <div class="col-2">
                                         <div class="de-image-hover rounded">
                                                 <img src="images/news/1.jpg" class="img-fluid" alt="">
                                         </div>
                                     </div>
-                                    <div class="col-2 mb30">
+                                    <div class="col-2">
                                         <div class="de-image-hover rounded">
                                                 <img src="images/news/1.jpg" class="img-fluid" alt="">
                                         </div>
@@ -558,6 +613,9 @@
             css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
             document.body.appendChild(css);
         };
+
+        
+        
     </script>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
