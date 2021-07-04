@@ -49,11 +49,11 @@
     transform: none;
 }
 
-.rumah>div>img {
+.rumah>a>div>img {
     transition: all .2s ease-in-out;
 }
 
-.rumah>div>img:hover {
+.rumah>a>div>img:hover {
     transform: scale(1.1);
 }
 
@@ -78,46 +78,153 @@
     left: 23%;
 }
 
-.rumah1>div {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
+.rumah2 {
+    max-width: 10%;
     position: absolute;
-    transform: translate(50%, -32%);
-    top: 0;
-    left: 0;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-    width: 320px;
-    text-align: left;
-    z-index: 3;
+    z-index: 2;
+    top: 40%;
+    left: 28%;
 }
 
-.map-card-content > p{
-    color: black;
-
+.rumah3 {
+    max-width: 10%;
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    left: 31%;
 }
 
-.map-card-content > h3{
-    color: black;
-    margin-bottom: 10px;
+.rumah4 {
+    max-width: 10%;
+    position: absolute;
+    z-index: 2;
+    top: 22%;
+    left: 43%;
 }
 
-.rumah1:hover>div {
-    visibility: visible;
-    opacity: 100%;
-    transform: translate(60%, -32%);
+.rumah5 {
+    max-width: 10%;
+    position: absolute;
+    z-index: 2;
+    top: 41%;
+    left: 44%;
 }
+
+.rumah6 {
+    max-width: 10%;
+    position: absolute;
+    z-index: 2;
+    top: 36%;
+    left: 62%;
+}
+
+.rumah7 {
+    max-width: 10%;
+    position: absolute;
+    z-index: 2;
+    top: 57%;
+    left: 53%;
+}
+
+.rumah8 {
+    max-width: 10%;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 66%;
+}
+
+/* game page */
+
+.bendera1 {
+    max-width: 20%;
+    position: absolute;
+    z-index: 2;
+    top: 36%;
+    left: 24%;
+}
+
+.bendera2 {
+    max-width: 16%;
+    position: absolute;
+    z-index: 2;
+    top: 43%;
+    left: 56%;
+}
+
+.bendera3 {
+    max-width: 18%;
+    position: absolute;
+    z-index: 2;
+    top: 8%;
+    left: 51%;
+}
+
+.bendera>image:last-child {
+    transition: none;
+}
+
+.bendera>image:last-child:hover {
+    transform: none;
+}
+
+.bendera>a>div>img {
+    transition: all .2s ease-in-out;
+}
+
+.bendera>a>div>img:hover {
+    transform: scale(1.1);
+}
+
+.first-section {
+    padding-top: 140px;
+}
+
+.modal-bendera {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1em;
+    padding: 20px;
+}
+
+.modal-bendera > div:nth-child(3){
+    grid-column: 1/3; 
+}
+
+.modal-bendera > div:nth-child(4){
+    grid-column: 1/3; 
+}
+
+.modal-bendera p {
+    margin-bottom: 0px;
+}
+
+.nested1{
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+    grid-gap: 1em;
+}
+
+.nested1 > div:nth-child(1) > p:hover{
+    cursor: pointer;
+}
+
+.nested0{
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    grid-gap: 1em;
+}
+
+/* endline of game page */
 
 /* sementara hanya untuk mengehentikan newsletter*/
 
-#myModal {
+/* #myModal {
     display: none !important;
 }
 
 .modal-backdrop {
     display: none !important;
-}
+} */
 
 /* endline sementara hanya untuk mengehentikan newsletter */
