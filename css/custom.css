@@ -215,6 +215,20 @@
     grid-gap: 1em;
 }
 
+.bg-gallery{
+    background-image: url('../images/bg-gal.png'); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
+.bg-asd-bata{
+    background-image: url('../images/bg-bata.png'); 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+}
+
 /* endline of game page */
 
 /* sementara hanya untuk mengehentikan newsletter*/
