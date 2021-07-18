@@ -200,9 +200,8 @@
 }
 
 .nested1{
-    display: grid;
-    grid-template-rows: 1fr 5fr;
-    grid-gap: 1em;
+    display: flex;
+    flex-direction: column;
 }
 
 .nested1 > div:nth-child(1) > p:hover{
@@ -211,7 +210,7 @@
 
 .nested0{
     display: grid;
-    grid-template-rows: 4fr 1fr;
+    grid-template-rows: minmax(1fr, 3fr) 1fr;
     grid-gap: 1em;
 }
 

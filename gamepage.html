@@ -33,9 +33,14 @@
     #mainmenu a {
         color: black;
     }
+
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    }
 </style>
 
-<body>
+<body id="body-id">
     <div id="wrapper">
         <!-- header begin -->
         <header class="transparent">
@@ -170,29 +175,45 @@
                 </div>
             </section>
             -->
-            <section aria-label="section">
-                <div class="container bendera" style="overflow: hidden; position: relative;">
-                    <a data-toggle="modal" data-target="#basicExampleModal">
-                        <div class="bendera1">
-                            <img src="images/bendera1.png" style="width: 100%;">
-                        </div>
-                    </a>
-                    <a data-toggle="modal" data-target="#basicExampleModal">
-                        <div class="bendera2">
-                            <img src="images/bendera2.png" style="width: 100%;">
-                        </div>
-                    </a>
-                    <a data-toggle="modal" data-target="#basicExampleModal">
-                        <div class="bendera3">
-                            <img src="images/bendera3.png" style="width: 100%;">
-                        </div>
-                    </a>
-                    
 
-                    <img style="max-width: 100%; visibility: hidden;" src="images/little-map-background.png">
-                    <img style="max-width: 100%; position: absolute; left: 0; top: 0; z-index: 1;" src="images/little-map-background.png">
-                    </div>
+
+            <section aria-label="section">
+                <a data-toggle="modal" data-target="#video">
+                <img id="kunci" src="images/lock.png"
+                    style="position: absolute; z-index: 5; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+                </a>
+
+                <div id="map-manipulate" style="filter: brightness(0.2);">
+                    <div class="container bendera" style="overflow: hidden; position: relative;">
+                        <a data-toggle="modal" data-target="#basicExampleModal">
+                            <div class="bendera1">
+                                <img src="images/bendera1.png" style="width: 100%;">
+                            </div>
+                        </a>
+                        <a data-toggle="modal" data-target="#basicExampleModal6">
+                            <div class="bendera2">
+                                <img src="images/bendera2.png" style="width: 100%;">
+                            </div>
+                        </a>
+                        <a data-toggle="modal" data-target="#basicExampleModal2">
+                            <div class="bendera3">
+                                <img src="images/bendera3.png" style="width: 100%;">
+                            </div>
+                        </a>
+                        
+                        
+                        <img style="max-width: 100%; visibility: hidden;" src="images/little-map-background.png">
+                        <img style="max-width: 100%; position: absolute; left: 0; top: 0; z-index: 1;" src="images/little-map-background.png">
+                </div>
             </section>
+
+            <div style="position: relative;">
+                <img id="matt-dayung" style="position: absolute; width: 100%; top: 0; left: -1000px; z-index: 4;" src="images/matt-dayung.png">
+                <img style="position: absolute; width: 100%; top: 0; left: 0; z-index: 1;" src="images/matt-dayung-background.png">
+                <img style="visibility: hidden;" src="images/matt-dayung-background.png">
+            </div>
+
+
             <!--
             <section id="section-text" data-bgcolor="#111111" class="text-light">
                 <div class="container">
@@ -359,11 +380,11 @@
                         </div>
                     </div>
                     <div class="nested1">
-                        <div style="display: flex; justify-content: center; align-items: center; background-color: black;">
-                            <p style="font-weight: bold; font-size: 24px; text-align: center; color: white;" onclick="show()">CLUE</p>
+                        <div style="display: flex; justify-content: center; align-items: center; background-color: black; margin-bottom: 1em;">
+                            <p style="font-weight: bold; font-size: 24px; text-align: center; color: white; padding: 20px 0;" onclick="show()">CLUE</p>
                         </div>
                         <div style="visibility: hidden;" id="clue">
-                            <p>It is a long established fact that a reader will be distracted</p>
+                            <img src="images/clue-question-1.png" style="width: 100%;">
                         </div>
                     </div>
                     <div>
@@ -374,19 +395,346 @@
                     </div>
                 </div>
                 <div style="padding: 20px;">
-                    <button type="button" class="btn btn-primary btn-lg btn-block" style="background-color: black;">Next</button>
+                    <a id="question1-click" data-toggle="modal" data-target="#basicExampleModal2">
+                        <button type="button" class="btn btn-primary btn-lg btn-block" style="background-color: black;">Next</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="basicExampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document"
+            style="margin: 0px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; max-width: 800px;">
+            <div class="modal-content">
+                <div class="modal-bendera">
+                    <div class="nested0">
+                        <div>
+                            <img src="images/question-2.png" style="max-width: 100%;">
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                            <input type="text" required="" style="width: 70%; height: 100%; padding: 20px;"
+                                placeholder="Your Answer Here">
+                            <button type="button" class="btn btn-success" style="width: 25%; height: 100%;">Submit</button>
+                        </div>
+                    </div>
+                    <div class="nested1">
+                        <div style="display: flex; justify-content: center; align-items: center; background-color: black; margin-bottom: 1em">
+                            <p style="font-weight: bold; font-size: 24px; text-align: center; color: white; padding: 20px 0;"
+                                onclick="show2()">CLUE</p>
+                        </div>
+                        <div style="visibility: hidden;" id="clue2">
+                            <img src="images/clue-question-2.png" style="max-width: 100%;">
+                        </div>
+                    </div>
+                    <div>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                            distribution of letters</p>
+                    </div>
+                    <div>
+                        <p>testing lagi</p>
+                    </div>
+                </div>
+                <div style="padding: 20px;">
+                    <button type="button" class="btn btn-primary btn-lg btn-block"
+                        style="background-color: black;">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="basicExampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document"
+            style="margin: 0px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; max-width: 800px;">
+            <div class="modal-content">
+                <div class="modal-bendera">
+                    <div class="nested0">
+                        <div>
+                            <img src="images/question-3.png" style="max-width: 100%;">
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                            <input type="text" required="" style="width: 70%; height: 100%; padding: 20px;"
+                                placeholder="Your Answer Here">
+                            <button type="button" class="btn btn-success" style="width: 25%; height: 100%;">Submit</button>
+                        </div>
+                    </div>
+                    <div class="nested1">
+                        <div style="display: flex; justify-content: center; align-items: center; background-color: black; margin-bottom: 1em;">
+                            <p style="font-weight: bold; font-size: 24px; text-align: center; color: white; padding: 20px 0;"
+                                onclick="show3()">CLUE</p>
+                        </div>
+                        <div style="visibility: hidden;" id="clue3">
+                            <p>In order to find the shortest path from one  point to another point with a lot of alternate route, we can use Dijkstra’s algorithm. This algorithm pick the unvisited point with the lowest distance, calculates the distance through it to each unvisited neigbor, and it will updates the neighbor’s distance if smaller.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                            distribution of letters</p>
+                    </div>
+                    <div>
+                        <p>testing lagi</p>
+                    </div>
+                </div>
+                <div style="padding: 20px;">
+                    <button type="button" class="btn btn-primary btn-lg btn-block"
+                        style="background-color: black;">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="basicExampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document"
+            style="margin: 0px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; max-width: 800px;">
+            <div class="modal-content">
+                <div class="modal-bendera">
+                    <div class="nested0">
+                        <div>
+                            <P style="font-size: 1.25rem;">Matt and agents reach the final destination where he saw 8 doors. The kidnapper mentioned that meta is in one of these doors and the rest are empty. The kidnapper ask you to pick 1 door, you choose door number 8,  and then he explains that he will destroy the other 6 rooms door and everything. He then showed that all 6 has no corpse of meta and he ask you whether you want to switch doors to number 7  or keep the first choice of the door (door number 8).
+                                <br><br>Which one will you pick and why? 
+                                </P>
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: space-between; ">
+                            <img src="images/door1.png" style="width: 12.5%; opacity: 0.6;">
+                            <img src="images/door2.png" style="width: 12.5%; opacity: 0.6;">
+                            <img src="images/door3.png" style="width: 12.5%; opacity: 0.6;">
+                            <img src="images/door4.png" style="width: 12.5%; opacity: 0.6;">
+                            <img src="images/door5.png" style="width: 12.5%; opacity: 0.6;">
+                            <img src="images/door6.png" style="width: 12.5%; opacity: 0.6;">
+                            <img src="images/door8.png" style="width: 12.5%;">
+                            <img src="images/door7.png" style="width: 12.5%;">
+                        </div>
+                    </div>
+                    <div class="nested1">
+                        <div style="display: flex; justify-content: center; align-items: center; background-color: black; margin-bottom: 1em;">
+                            <p style="font-weight: bold; font-size: 24px; text-align: center; color: white; padding: 20px 0;"
+                                onclick="show3()">CLUE</p>
+                        </div>
+                        <div style="visibility: hidden;" id="clue3">
+                            <p>In order to find the shortest path from one  point to another point with a lot of alternate route, we can use Dijkstra’s algorithm. This algorithm pick the unvisited point with the lowest distance, calculates the distance through it to each unvisited neigbor, and it will updates the neighbor’s distance if smaller.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                            distribution of letters</p>
+                    </div>
+                    <div>
+                        <p>testing lagi</p>
+                    </div>
+                </div>
+                <div style="padding: 20px;">
+                    <button type="button" class="btn btn-primary btn-lg btn-block"
+                        style="background-color: black;">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="basicExampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document"
+            style="margin: 0px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; max-width: 800px;">
+            <div class="modal-content">
+                <div class="modal-bendera">
+                    <div class="nested0">
+                        <div> 
+                            <img src="images/question-5.png" style="max-width: 100%;">
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                            <input type="text" required="" style="width: 70%; height: 100%; padding: 20px;"
+                                placeholder="Your Answer Here">
+                            <button type="button" class="btn btn-success" style="width: 25%; height: 100%;">Submit</button>
+                        </div>
+                    </div>
+                    <div class="nested1">
+                        <div style="display: flex; justify-content: center; align-items: center; background-color: black; margin-bottom: 1em;">
+                            <p style="font-weight: bold; font-size: 24px; text-align: center; color: white; padding: 20px 0;"
+                                onclick="show3()">CLUE</p>
+                        </div>
+                        <div style="visibility: hidden;" id="clue3">
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                            distribution of letters</p>
+                    </div>
+                    <div>
+                        <p>testing lagi</p>
+                    </div>
+                </div>
+                <div style="padding: 20px;">
+                    <button type="button" class="btn btn-primary btn-lg btn-block"
+                        style="background-color: black;">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="basicExampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document"
+            style="margin: 0px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; max-width: 800px;">
+            <div class="modal-content">
+                <div class="modal-bendera">
+                    <div class="nested0">
+                        <div> 
+                            <img src="images/question6.png" style="max-width: 70%; margin-left: auto; margin-right: auto; display: block;">
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                            <input type="text" required="" style="width: 70%; height: 100%; padding: 20px;"
+                                placeholder="Your Answer Here">
+                            <button type="button" class="btn btn-success" style="width: 25%; height: 100%;">Submit</button>
+                        </div>
+                    </div>
+                    <div class="nested1">
+                        <div style="display: flex; justify-content: center; align-items: center; background-color: black; margin-bottom: 1em;">
+                            <p style="font-weight: bold; font-size: 24px; text-align: center; color: white; padding: 20px 0;"
+                                onclick="show3()">CLUE</p>
+                        </div>
+                        <div style="visibility: hidden;" id="clue3">
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                            when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                            distribution of letters</p>
+                    </div>
+                    <div>
+                        <p>testing lagi</p>
+                    </div>
+                </div>
+                <div style="padding: 20px;">
+                    <button type="button" class="btn btn-primary btn-lg btn-block"
+                        style="background-color: black;">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="video" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document" style="margin: 0px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; max-width: 800px;">
+            <div class="modal-content">
+                
+                <div id="modal-loading" style="height: 500px; justify-content: center; align-items: center; display: none;">
+                    <div style="border: 16px solid #f3f3f3; /* Light grey */
+                    border-top: 16px solid #3498db; /* Blue */
+                    border-radius: 50%;
+                    width: 120px;
+                    height: 120px;
+                    animation: spin 2s linear infinite;
+                    background-color: transparent;"></div>
+                </div>
+
+
+                <div id="modal-content-video" style="display: flex; flex-direction: row;">
+                    <iframe id="video-id" width="80%" height="500" src="https://www.youtube.com/embed/XF1_MlZ5l6M" frameborder="0" allowfullscreen></iframe>
+
+                    <div style="display: flex; justify-content: center; align-items: center; width: 20%;">
+                        <img src="images/arrow.png" style="width: 50px; height: 50px;" id="arrow">
+                    </div>
                 </div>
 
                 
-
             </div>
         </div>
     </div>
 
     <script>
+        let question1 = document.querySelector("#question1-click")
+        let modal2 = document.querySelector("#basicExampleModal")        
+        
+        
+
+        question1.addEventListener("click", function() {
+            let body = document.querySelector("#body-id")
+            let modal_backdrop = document.querySelector(".modal-backdrop")
+
+
+            console.log(modal_backdrop)
+            body.style.paddingRight = "0px"
+            modal2.style.display = "none"
+            modal_backdrop.remove()
+            console.log('sudah berjalan')
+        })
+
+
+        let mattdayunggerak = document.querySelector("#matt-dayung")
+
+        window.addEventListener("scroll", function(){
+            let value = window.scrollY
+
+            console.log(value)
+
+            if (value >= 400 && mattdayunggerak.style.left < 0 + 'px'){
+                mattdayunggerak.style.left = (value-400)*2.77 - 1000 + 'px' ;
+            }else if (value <=  750){
+                mattdayunggerak.style.left = (value-400)*2.77 - 1000 + 'px' ;
+            }
+
+            // console.log(mattdayunggerak.style.left)
+            // if (mattdayunggerak.style.left < 0 + 'px'){
+            //     mattdayunggerak.style.left = 0 - 1000 + 'px' ;
+            // }else{
+                
+            // }
+            
+        })
+
         function show(){
             document.getElementById("clue").style.visibility="visible";
         }
+        function show2(){
+            document.getElementById("clue2").style.visibility="visible";
+        }
+        function show3(){
+            document.getElementById("clue3").style.visibility="visible";
+        }
+
+        const videolink = document.querySelector("#video-id")
+        const testing = document.querySelector("#video-ubah")
+
+        let mencobalagi = () => {
+            videolink.src = "https://www.youtube.com/embed/mU6anWqZJcc"
+            setTimeout(function() {
+                document.querySelector("#modal-content-video").style.display = "flex"
+                document.querySelector("#modal-loading").style.display = "none"
+            }, 1000);
+            
+            document.querySelector("#modal-content-video").style.display = "none"
+            document.querySelector("#modal-loading").style.display = "flex"
+        }
+
+        document.querySelector("#arrow").addEventListener("click", () => {
+            if (videolink.src == "https://www.youtube.com/embed/mU6anWqZJcc") {
+                let body = document.querySelector("#body-id")
+
+                document.querySelector("#video").style.visibility = "hidden"
+                body.style.paddingRight = "0px"
+                document.querySelector(".modal-backdrop").remove()
+                document.querySelector("#kunci").style.visibility = "hidden"
+                document.querySelector("#map-manipulate").style.filter = "brightness(1)"
+            } else {
+                mencobalagi()
+            }
+        })
+        
+        testing.addEventListener("click", () => {
+            document.querySelector("#kunci").style.visibility = "hidden"
+            document.querySelector("#map-manipulate").style.filter = "brightness(1)"
+        })
+
+        
+
     </script>
 
     <!-- Javascript Files
