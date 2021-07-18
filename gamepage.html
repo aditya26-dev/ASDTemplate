@@ -190,12 +190,12 @@
                                 <img src="images/bendera1.png" style="width: 100%;">
                             </div>
                         </a>
-                        <a data-toggle="modal" data-target="#basicExampleModal6">
+                        <a data-toggle="modal" data-target="#basicExampleModal4">
                             <div class="bendera2">
                                 <img src="images/bendera2.png" style="width: 100%;">
                             </div>
                         </a>
-                        <a data-toggle="modal" data-target="#basicExampleModal2">
+                        <a data-toggle="modal" data-target="#basicExampleModal3">
                             <div class="bendera3">
                                 <img src="images/bendera3.png" style="width: 100%;">
                             </div>
@@ -438,8 +438,10 @@
                     </div>
                 </div>
                 <div style="padding: 20px;">
-                    <button type="button" class="btn btn-primary btn-lg btn-block"
-                        style="background-color: black;">Next</button>
+                    <a data-toggle="modal" data-target="#video2" id="question2-click">
+                        <button type="button" class="btn btn-primary btn-lg btn-block"
+                            style="background-color: black;">Next</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -455,7 +457,7 @@
                         <div>
                             <img src="images/question-3.png" style="max-width: 100%;">
                         </div>
-                        <div style="display: flex; flex-direction: row; justify-content: space-between;">
+                        <div style="display: flex; flex-direction: row; justify-content: space-between; margin-top: 10px;">
                             <input type="text" required="" style="width: 70%; height: 100%; padding: 20px;"
                                 placeholder="Your Answer Here">
                             <button type="button" class="btn btn-success" style="width: 25%; height: 100%;">Submit</button>
@@ -480,8 +482,10 @@
                     </div>
                 </div>
                 <div style="padding: 20px;">
-                    <button type="button" class="btn btn-primary btn-lg btn-block"
-                        style="background-color: black;">Next</button>
+                    <a data-toggle="modal" data-target="#video3" id="question3-click">
+                        <button type="button" class="btn btn-primary btn-lg btn-block" id="question3-click"
+                            style="background-color: black;">Next</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -529,8 +533,10 @@
                     </div>
                 </div>
                 <div style="padding: 20px;">
-                    <button type="button" class="btn btn-primary btn-lg btn-block"
-                        style="background-color: black;">Next</button>
+                    <a data-toggle="modal" data-target="#video4" id="question4-click">
+                        <button type="button" class="btn btn-primary btn-lg btn-block"
+                            style="background-color: black;">Next</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -571,8 +577,10 @@
                     </div>
                 </div>
                 <div style="padding: 20px;">
-                    <button type="button" class="btn btn-primary btn-lg btn-block"
-                        style="background-color: black;">Next</button>
+                    <a data-toggle="modal" data-target="#video5" id="question5-click">
+                        <button type="button" class="btn btn-primary btn-lg btn-block"
+                            style="background-color: black;">Next</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -643,30 +651,164 @@
                         <img src="images/arrow.png" style="width: 50px; height: 50px;" id="arrow">
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="modal fade" id="video2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document" style="margin: 0px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; max-width: 800px;">
+            <div class="modal-content">
                 
+                <div id="modal-loading" style="height: 500px; justify-content: center; align-items: center; display: none;">
+                    <div style="border: 16px solid #f3f3f3; /* Light grey */
+                    border-top: 16px solid #3498db; /* Blue */
+                    border-radius: 50%;
+                    width: 120px;
+                    height: 120px;
+                    animation: spin 2s linear infinite;
+                    background-color: transparent;"></div>
+                </div>
+
+
+                <div id="modal-content-video" style="display: flex; flex-direction: row;">
+                    <iframe id="video-id" width="80%" height="500" src="https://www.youtube.com/embed/XF1_MlZ5l6M" frameborder="0" allowfullscreen></iframe>
+
+                    <div style="display: flex; justify-content: center; align-items: center; width: 20%;">
+                        <img src="images/arrow.png" style="width: 50px; height: 50px;" id="arrow2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="video3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document"
+            style="margin: 0px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; max-width: 800px;">
+            <div class="modal-content">
+    
+                <div id="modal-loading" style="height: 500px; justify-content: center; align-items: center; display: none;">
+                    <div style="border: 16px solid #f3f3f3; /* Light grey */
+                    border-top: 16px solid #3498db; /* Blue */
+                    border-radius: 50%;
+                    width: 120px;
+                    height: 120px;
+                    animation: spin 2s linear infinite;
+                    background-color: transparent;"></div>
+                </div>
+    
+    
+                <div id="modal-content-video" style="display: flex; flex-direction: row;">
+                    <iframe id="video-id" width="80%" height="500" src="https://www.youtube.com/embed/XF1_MlZ5l6M"
+                        frameborder="0" allowfullscreen></iframe>
+    
+                    <div style="display: flex; justify-content: center; align-items: center; width: 20%;">
+                        <img src="images/arrow.png" style="width: 50px; height: 50px;" id="arrow3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="video4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document"
+            style="margin: 0px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; max-width: 800px;">
+            <div class="modal-content">
+    
+                <div id="modal-loading" style="height: 500px; justify-content: center; align-items: center; display: none;">
+                    <div style="border: 16px solid #f3f3f3; /* Light grey */
+                    border-top: 16px solid #3498db; /* Blue */
+                    border-radius: 50%;
+                    width: 120px;
+                    height: 120px;
+                    animation: spin 2s linear infinite;
+                    background-color: transparent;"></div>
+                </div>
+    
+    
+                <div id="modal-content-video" style="display: flex; flex-direction: row;">
+                    <iframe id="video-id" width="80%" height="500" src="https://www.youtube.com/embed/XF1_MlZ5l6M"
+                        frameborder="0" allowfullscreen></iframe>
+    
+                    <div style="display: flex; justify-content: center; align-items: center; width: 20%;">
+                        <a data-toggle="modal" data-target="#basicExampleModal5">
+                            <img src="images/arrow.png" style="width: 50px; height: 50px;" id="arrow4">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="video5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document"
+            style="margin: 0px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 800px; max-width: 800px;">
+            <div class="modal-content">
+    
+                <div id="modal-loading" style="height: 500px; justify-content: center; align-items: center; display: none;">
+                    <div style="border: 16px solid #f3f3f3; /* Light grey */
+                    border-top: 16px solid #3498db; /* Blue */
+                    border-radius: 50%;
+                    width: 120px;
+                    height: 120px;
+                    animation: spin 2s linear infinite;
+                    background-color: transparent;"></div>
+                </div>
+    
+    
+                <div id="modal-content-video" style="display: flex; flex-direction: row;">
+                    <iframe id="video-id" width="80%" height="500" src="https://www.youtube.com/embed/XF1_MlZ5l6M"
+                        frameborder="0" allowfullscreen></iframe>
+    
+                    <div style="display: flex; justify-content: center; align-items: center; width: 20%;">
+                        <img src="images/arrow.png" style="width: 50px; height: 50px;" id="arrow5">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <script>
         let question1 = document.querySelector("#question1-click")
-        let modal2 = document.querySelector("#basicExampleModal")        
-        
-        
+        let question2 = document.querySelector("#question2-click")
+        let question3 = document.querySelector("#question3-click")
+        let question4 = document.querySelector("#question4-click")
+        let question5 = document.querySelector("#question5-click")
+        let video1 = document.querySelector("#arrow2")
+        let video2 = document.querySelector("#arrow3")
+        let video3 = document.querySelector("#arrow4")
+        let video4 = document.querySelector("#arrow5")
 
-        question1.addEventListener("click", function() {
+        let modalques1 = document.querySelector("#basicExampleModal")
+        let modalques2 = document.querySelector("#basicExampleModal2")
+        let modalques3 = document.querySelector("#basicExampleModal3")
+        let modalques4 = document.querySelector("#basicExampleModal4")
+        let modalques5 = document.querySelector("#basicExampleModal5")
+        let modalvid1 = document.querySelector("#video2")
+        let modalvid2 = document.querySelector("#video3")
+        let modalvid3 = document.querySelector("#video4")
+        let modalvid4 = document.querySelector("#video5")
+        
+        let changeModal = (modalvar, modaltypevar) => {
+            modalvar.addEventListener("click", function() {
             let body = document.querySelector("#body-id")
             let modal_backdrop = document.querySelector(".modal-backdrop")
 
-
-            console.log(modal_backdrop)
             body.style.paddingRight = "0px"
-            modal2.style.display = "none"
+            modaltypevar.style.display = "none"
             modal_backdrop.remove()
-            console.log('sudah berjalan')
         })
+        }
 
+        changeModal(question1, modalques1)
+        changeModal(question2, modalques2)
+        changeModal(question3, modalques3)
+        changeModal(question4, modalques4)
+        changeModal(question5, modalques5)
+        changeModal(video1, modalvid1)
+        changeModal(video2, modalvid2)
+        changeModal(video3, modalvid3)
+        changeModal(video4, modalvid4)
 
         let mattdayunggerak = document.querySelector("#matt-dayung")
 
@@ -680,14 +822,6 @@
             }else if (value <=  750){
                 mattdayunggerak.style.left = (value-400)*2.77 - 1000 + 'px' ;
             }
-
-            // console.log(mattdayunggerak.style.left)
-            // if (mattdayunggerak.style.left < 0 + 'px'){
-            //     mattdayunggerak.style.left = 0 - 1000 + 'px' ;
-            // }else{
-                
-            // }
-            
         })
 
         function show(){
@@ -732,9 +866,6 @@
             document.querySelector("#kunci").style.visibility = "hidden"
             document.querySelector("#map-manipulate").style.filter = "brightness(1)"
         })
-
-        
-
     </script>
 
     <!-- Javascript Files
