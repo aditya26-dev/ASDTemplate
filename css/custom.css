@@ -9,12 +9,15 @@
     color: black;
 }
 
+.matt-head {
+    /* height: 90px; */
+}
 /* endline of headerz */
 
 /* section1z */
 
 .section1-background {
-    background-image: url("/images/section1-background.png");
+    background-image: url("../images/section1-background.png");
     background-size: cover;
 }
 
@@ -70,7 +73,7 @@
     flex-direction: row;
 }
 
-.section1-div1-time-right > div {
+.section1-div1-time-right>div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
