@@ -213,7 +213,7 @@ header.header-bg {
 }
 
 header.transparent {
-    background: none;
+    background: white;
 }
 
 body:not(.side-layout) header:not(.smaller):not(.header-mobile).header-light.transparent {
@@ -500,7 +500,7 @@ header .header-col.mid .social-icons {
 #subheader {
     text-align: center;
     overflow: hidden;
-    padding: 100px 0 100px 0;
+    padding: 90px 0 100px 0;
 }
 
 #subheader h1 {
