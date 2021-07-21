@@ -33,7 +33,18 @@
     #rumah1 {
         display: none;
     }
+
+    html {
+        cursor:url(images/cursor-matt-agent.png), default; 
+    }
 </style>
+
+<script type="text/javascript">
+    function change() {
+        document.body.style.cursor="url(images/cursor-matt.png), default";
+        console.log("jalan nih")
+    }
+</script>
 
 <body>
     <!-- header begin -->
@@ -95,12 +106,12 @@
                         <div class="col text-center">
                             <div class="spacer-single"></div>
                             <br>
-                            <a href="#">
+                            <a onclick="document.getElementsByTagName('html').cursor=url(images/cursor-matt.png);">
                                 <img alt="" class="logo-2" src="images/LogoASD01.png" />
                             </a>
                             <br>
                             <!-- Modal -->
-                            <h1>Actuarial Science Day</h1>
+                            <h1 onclick="change()">Actuarial Science Day</h1>
                             <a href="HomePageBM.html"><p>by S1 Business Mathematics</p></a>
                             <div style="background-color:white; border-radius: 10px; padding: 20px; box-shadow:20px 20px 150px 15px black; ">
                                 <div class="row justify-content-center" style="text-align: center; margin-top: 10px;">
