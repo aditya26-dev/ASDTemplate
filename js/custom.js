@@ -1,8 +1,5 @@
 let button_matt_change = document.querySelector("#change-matt-head")
 
-
-
-
 button_matt_change.addEventListener("click", () => {
     let matt_head1 = document.querySelector("#matt-head1")
     let matt_head2 = document.querySelector("#matt-head2")

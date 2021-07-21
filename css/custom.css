@@ -104,6 +104,61 @@
 
 /* end of section1z */
 
+/* section2z */
+
+.section2-background{
+    background-image: url("../images/section2-background.png");
+    padding: 0;
+}
+
+.section2-top{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+.section2-top-item{
+    background-color: white;
+    width: 30%;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.section2-top-item:nth-child(1) > img:nth-child(1){
+    max-width: 100%;
+    margin-bottom: 12px;
+}
+.section2-top-item:nth-child(1) > img:nth-child(2){
+    max-width: 90%;
+}
+
+.section2-top-item:nth-child(2) > img:nth-child(1){
+    max-width: 53%;
+    margin-bottom: 12px;
+}
+.section2-top-item:nth-child(2) > img:nth-child(2){
+    max-width: 100%;
+}
+
+
+.section2-top-item:nth-child(3){
+    background-image: url("../images/section2-image3.png");
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.section2-top-item:nth-child(3) > img{
+    max-width: 60%;
+    margin-bottom: 6px;
+}
+.section2-top-item:nth-child(3) > p{
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* end of section2z */
+
 .medpar-sponsor-class {
     display: flex;
 }
