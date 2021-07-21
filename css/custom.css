@@ -1,3 +1,164 @@
+:root {
+    --shadow-box: rgba(0, 0, 0, 0.212)
+}
+
+/* headerz */
+
+#mainmenu li a {
+    font-weight: bold;
+    color: black;
+}
+
+.matt-head {
+    /* height: 90px; */
+}
+/* endline of headerz */
+
+/* section1z */
+
+.section1-background {
+    background-image: url("../images/section1-background.png");
+    background-size: cover;
+}
+
+.section1-div1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+
+.section1-div1 p {
+    margin-bottom: 0px;
+    line-height: normal;
+}
+
+.section1-div1-logo {
+    width: 25%;
+}
+
+.section1-div1-logo>img {
+    max-width: 100%;
+}
+
+.section1-div1-time {
+    display: flex;
+    width: 75%;
+    flex-direction: row;
+}
+
+.section1-div1-time-left {
+    background-color: #ef9c66;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 10px 2px var(--shadow-box);
+}
+
+.section1-div1-time-left>p:nth-child(1) {
+    line-height: 8rem;
+    font-size: 8rem;
+    font-weight: bold;
+}
+
+.section1-div1-time-left>p:nth-child(2) {
+    line-height: 3.5rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.section1-div1-time-right {
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+}
+
+.section1-div1-time-right>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.time-right-inside {
+    background-color: white;
+    color: #ef9c66;
+    border-radius: 15px;
+    padding: 20px 16px;
+    box-shadow: 0 0 10px 2px var(--shadow-box);
+    min-height: 0;
+}
+
+.time-right-inside>p:nth-child(1) {
+    line-height: 6rem;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.time-right-inside>p:nth-child(2) {
+    line-height: 2.5rem;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* end of section1z */
+
+/* section2z */
+
+.section2-background{
+    background-image: url("../images/section2-background.png");
+    padding: 0;
+}
+
+.section2-top{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+}
+
+.section2-top-item{
+    background-color: white;
+    width: 30%;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.section2-top-item:nth-child(1) > img:nth-child(1){
+    max-width: 100%;
+    margin-bottom: 12px;
+}
+.section2-top-item:nth-child(1) > img:nth-child(2){
+    max-width: 90%;
+}
+
+.section2-top-item:nth-child(2) > img:nth-child(1){
+    max-width: 53%;
+    margin-bottom: 12px;
+}
+.section2-top-item:nth-child(2) > img:nth-child(2){
+    max-width: 100%;
+}
+
+
+.section2-top-item:nth-child(3){
+    background-image: url("../images/section2-image3.png");
+    background-size: contain !important;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.section2-top-item:nth-child(3) > img{
+    max-width: 60%;
+    margin-bottom: 6px;
+}
+.section2-top-item:nth-child(3) > p{
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* end of section2z */
+
 .medpar-sponsor-class {
     display: flex;
 }
@@ -187,44 +348,44 @@
     padding: 20px;
 }
 
-.modal-bendera > div:nth-child(3){
-    grid-column: 1/3; 
+.modal-bendera>div:nth-child(3) {
+    grid-column: 1/3;
 }
 
-.modal-bendera > div:nth-child(4){
-    grid-column: 1/3; 
+.modal-bendera>div:nth-child(4) {
+    grid-column: 1/3;
 }
 
 .modal-bendera p {
     margin-bottom: 0px;
 }
 
-.nested1{
+.nested1 {
     display: flex;
     flex-direction: column;
 }
 
-.nested1 > div:nth-child(1) > p:hover{
+.nested1>div:nth-child(1)>p:hover {
     cursor: pointer;
 }
 
-.nested0{
+.nested0 {
     display: grid;
     grid-template-rows: minmax(1fr, 3fr) 1fr;
     grid-gap: 1em;
 }
 
-.bg-gallery{
-    background-image: url('../images/bg-gal.png'); 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
+.bg-gallery {
+    background-image: url('../images/bg-gal.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 100% 100%;
 }
 
-.bg-asd-bata{
-    background-image: url('../images/bg-bata.png'); 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
+.bg-asd-bata {
+    background-image: url('../images/bg-bata.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: 100% 100%;
 }
 
@@ -240,6 +401,5 @@
 .modal-backdrop {
     display: none !important;
 }  */
-
 
 /* endline sementara hanya untuk mengehentikan newsletter */
