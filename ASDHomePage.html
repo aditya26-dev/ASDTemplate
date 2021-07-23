@@ -75,9 +75,6 @@
                                 <img id="matt-head2" src="images/head-matt2.png" style="height: 80px; margin-right: 20px; display: none;">
                                 <button type="button" class="btn btn-dark" id="change-matt-head">Change</button>
                             </div>
-                            
-                            
-
                             <!-- <div class="h-phone md-hide"><span>Need&nbsp;Help?</span><i class="fa fa-phone"></i> 1 200 300 9000</div> -->
                             <span id="menu-btn"></span>
                         </div>
@@ -97,7 +94,9 @@
                     <div class="row" style="padding: 40px 0">
                         <div class="col text-center section1-div1">
                             <div class="section1-div1-logo">
-                                <img src="images/section1-logo-asd-glow.png">
+                                <a data-toggle="modal" data-target="#modal_logo_asd">
+                                    <img src="images/section1-logo-asd-glow.png">
+                                </a>
                             </div>
                             <div class="section1-div1-time">
                                 <div class="section1-div1-time-left">
@@ -141,6 +140,55 @@
                     </div>
                 </div>
             </div>
+
+            <!-- <div class="modal fade" id="modal_logo_asd" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document" style="margin: 0px; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 900px; max-width: 90%;">
+                    <div class="modal-content" style="border-radius: 25px; display: flex; justify-content: center; align-items: center; flex-direction: row; padding: 50px;">
+                            <div style="width: 25%; margin-right: 50px;">
+                                <img src="images/Logo-ASD.png" style="width: 100%; margin-bottom: 20px;">
+                                <p style="font-weight: bold; font-size: 24px; color: #ed9b66; margin-bottom: 0">Actuarial</p>
+                                <p style="font-weight: bold; font-size: 24px; color: #4e7cd8; margin-bottom: 0">Science Day</p>
+                            </div>
+                            <p style="width: 70%; margin-bottom: 0; font-size: 18px; color: black; text-align: left; line-height: 32px !important;"><span style="font-weight: bold;">Actuarial Science Day (ASD)</span> is an annual event organized by S1 Business Mathematics (Prasetiya Mulya University). This event aims to broaden the knowledge of high school students regarding actuarial science and the job opportunites of an actuary in the future. This year, the ASD implementation will be made online which includes 4 main activities, namely 3 in 1 competition (Escape room, Relay Exam, and Case Analysis), Boot Camp, Workshop,  and Talk Show.</p>
+                    </div>
+                </div>
+                <img src="images/arrow-right.png">
+            </div> -->
+            <div class="modal fade" id="modal_logo_asd" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+                <div style="display: flex; justify-content: center; align-items: center; position: fixed; width: 100%; height: 100vh; top: 0; left: 0; flex-direction: row; pointer-events: none;">
+                    <img src="images/arrow-left.png" id="modal-logo-asd-arrow-left" style="width: 80px; pointer-events: all;">
+                    
+                    <div id="modal_logo_asd_1" class="modal-dialog" role="document" style="max-width: 900px; margin: 40px;">
+                        <div class="modal-content" style="border-radius: 25px; display: flex; justify-content: center; align-items: center; flex-direction: row; padding: 50px;">
+                                <div style="width: 25%; margin-right: 50px;">
+                                    <img src="images/Logo-ASD.png" style="width: 100%; margin-bottom: 20px;">
+                                    <p style="font-weight: bold; font-size: 24px; color: #ed9b66; margin-bottom: 0">Actuarial</p>
+                                    <p style="font-weight: bold; font-size: 24px; color: #4e7cd8; margin-bottom: 0">Science Day</p>
+                                </div>
+                                <p style="width: 70%; margin-bottom: 0; font-size: 18px; color: black; text-align: left; line-height: 32px !important;"><span style="font-weight: bold;">Actuarial Science Day (ASD)</span> is an annual event organized by S1 Business Mathematics (Prasetiya Mulya University). This event aims to broaden the knowledge of high school students regarding actuarial science and the job opportunites of an actuary in the future. This year, the ASD implementation will be made online which includes 4 main activities, namely 3 in 1 competition (Escape room, Relay Exam, and Case Analysis), Boot Camp, Workshop,  and Talk Show.</p>
+                        </div>
+                    </div>
+
+                    <div id="modal_logo_asd_2" class="modal-dialog" role="document" style="max-width: 900px; margin: 40px; display: none;">
+                        <div class="modal-content" style="border-radius: 25px; display: flex; justify-content: center; align-items: center; flex-direction: row; padding: 50px;">
+                                <div style="padding-right: 10px;">
+                                    <p style="font-size: 30px; color: #ed9b66; font-weight: bold;">Vision</p>
+                                    <p style="font-size: 18px; color: black; margin-bottom: 0;"><span style="font-weight: bold;">Actuarial Science Day (ASD)</span> is an annual event organized by S1 Business Mathematics (Prasetiya Mulya University). This event aims to broaden the knowledge of high school students regarding actuarial science and the job opportunites of an actuary in the future. This year, the ASD implementation will be made online which includes 4 main activities, namely 3 in 1 competition (Escape room, Relay Exam, and Case Analysis), Boot Camp, Workshop,  and Talk Show.</p>
+                                </div>
+                                <div style="padding-left: 10px;">
+                                    <p style="font-size: 30px; color: #4e7cd8; font-weight: bold;">Mission</p>
+                                    <p style="font-size: 18px; color: black; margin-bottom: 0;"><span style="font-weight: bold;">Actuarial Science Day (ASD)</span> is an annual event organized by S1 Business Mathematics (Prasetiya Mulya University). This event aims to broaden the knowledge of high school students regarding actuarial science and the job opportunites of an actuary in the future. This year, the ASD implementation will be made online which includes 4 main activities, namely 3 in 1 competition (Escape room, Relay Exam, and Case Analysis), Boot Camp, Workshop,  and Talk Show.</p>
+                                </div>
+                        </div>
+                    </div>
+
+                    <img src="images/arrow-right.png" id="modal-logo-asd-arrow-right" style="width: 80px; pointer-events: all;" >
+                </div>
+                
+            </div>
         </section>
         <section class="section2-background">
             <div style="background-color: rgba(0, 0, 0, 0.24); display: block; padding: 90px 0;">
@@ -179,7 +227,7 @@
                                 <p style="font-size: 30px; margin-bottom: 0; line-height: normal; font-weight: bold; color: black;">OUR MASCOT MATT NEEDS YOUR HELP</p>
                                 <p style="font-size: 30px; margin-bottom: 30px; line-height: normal; font-weight: bold; color: black;">TO SAVE HIS GIRLFRIEND META </p>
 
-                                <p style="font-size: 20px; font-weight: 400; text-align: center; line-height: 36px !important;">Play our game (Click "Battle") and win cash rewards with a total of 350k by posting an
+                                <p style="font-size: 20px; font-weight: 400; text-align: center; line-height: 36px !important; margin-bottom: 0px;">Play our game (Click "Battle") and win cash rewards with a total of 350k by posting an
                                     instagram story of your journey while saving Meta on our website and tagging us
                                     @asd.prasmul !</p>
                             </div>
