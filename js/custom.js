@@ -32,10 +32,10 @@ button_matt_change.addEventListener("click", () => {
     if (matt_head2.style.display == "none"){
         matt_head1.style.display = "none"
         matt_head2.style.display = "inline"
-        document.body.style.cursor="url(images/cursor-matt.png), default";
+        document.body.style.cursor="url(images/kursor-matt.png), default";
     }else{
         matt_head1.style.display = "inline"
         matt_head2.style.display = "none"
-        document.body.style.cursor="url(images/cursor-matt-agent.png), default";
+        document.body.style.cursor="url(images/kursor-matt-agent.png), default";
     }
 })
