@@ -16,6 +16,22 @@
 
 /* section1z */
 
+#mainmenu li a{
+    transition: all .2s ease;
+}
+
+#mainmenu li a:hover{
+    transform: scale(1.2);
+}
+
+.section1-logoasd-glow{
+    transition: all .2s ease-in-out;
+}
+
+.section1-logoasd-glow:hover{
+    transform: scale(1.1);
+}
+
 .section1-background {
     background-image: url("../images/section1-background.png");
     background-size: cover;
@@ -100,6 +116,20 @@
     line-height: 2.5rem;
     font-size: 2.5rem;
     font-weight: bold;
+}
+
+.section1-bottom{
+    width: 90%;
+    overflow: hidden;
+}
+
+.section1-bottom > h2{
+    animation: scrolling 10s linear infinite;
+}
+
+@keyframes scrolling{
+    0% { transform: translate(110%);}
+    100% { transform: translate(-105%);}
 }
 
 
