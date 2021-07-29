@@ -293,6 +293,14 @@ header.smaller #mainmenu ul ul {
     top: 0px;
 }
 
+header.smaller #mainmenu li a{
+    color: white;
+}
+
+header.smaller #mainmenu li a:hover{
+    color: orange;
+}
+
 header.smaller {
     background: rgba(0, 0, 0, .8);
     position: fixed;

@@ -4,16 +4,36 @@ let modal_logo_asd_arrow_right = document.querySelector("#modal-logo-asd-arrow-r
 let modal_logo_asd_inside1 = document.querySelector("#modal_logo_asd_1")
 let modal_logo_asd_inside2 = document.querySelector("#modal_logo_asd_2")
 
-console.log(modal_logo_asd_inside2)
-
 modal_logo_asd_arrow_left.addEventListener("click", () => {
-    modal_logo_asd_inside1.style.display = "flex"
-    modal_logo_asd_inside2.style.display = "none"
+    modal_logo_asd_inside1.style.height = "auto"
+    modal_logo_asd_inside1.style.maxWidth = "900px"
+    modal_logo_asd_inside1.style.margin = "40px"
+    modal_logo_asd_inside1.style.transition = "transform 500ms ease-in-out, opacity 500ms ease-in-out"
+    modal_logo_asd_inside1.style.transform = "translateX(0)"
+    modal_logo_asd_inside1.style.opacity = "100%"
+
+    modal_logo_asd_inside2.style.height = "0"
+    modal_logo_asd_inside2.style.maxWidth = "0"
+    modal_logo_asd_inside2.style.margin = "0"
+    modal_logo_asd_inside2.style.transitionDuration = "0s"
+    modal_logo_asd_inside2.style.transform = "translateX(10%)"
+    modal_logo_asd_inside2.style.opacity = "0"
 })
 
 modal_logo_asd_arrow_right.addEventListener("click", () => {
-    modal_logo_asd_inside1.style.display = "none"
-    modal_logo_asd_inside2.style.display = "flex"
+    modal_logo_asd_inside1.style.height = "0"
+    modal_logo_asd_inside1.style.maxWidth = "0"
+    modal_logo_asd_inside1.style.margin = "0"
+    modal_logo_asd_inside1.style.transitionDuration = "0s"
+    modal_logo_asd_inside1.style.transform = "translateX(-10%)"
+    modal_logo_asd_inside1.style.opacity = "0"
+
+    modal_logo_asd_inside2.style.height = "auto"
+    modal_logo_asd_inside2.style.maxWidth = "900px"
+    modal_logo_asd_inside2.style.margin = "40px"
+    modal_logo_asd_inside2.style.transition = "transform 500ms ease-in-out, opacity 500ms ease-in-out"
+    modal_logo_asd_inside2.style.transform = "translateX(0)"
+    modal_logo_asd_inside2.style.opacity = "100%"
 })
 
 let arrow_clickable = (arrowvar) => {
