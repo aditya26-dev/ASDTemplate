@@ -61,3 +61,15 @@ button_matt_change.addEventListener("click", () => {
         
     }
 })
+
+let faqs_content = document.querySelectorAll(".section9-faqs-content")
+let faqs_title = document.querySelectorAll(".section9-faqs-title")
+let faqs_desc = document.querySelectorAll(".section9-faqs-desc")
+
+faqs_content.forEach(changeColor)
+
+function changeColor(element){
+    element.addEventListener("click", () => {
+        element.classList.toggle("active");
+    })
+}

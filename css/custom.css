@@ -482,6 +482,8 @@
 
 /* end of section6z */
 
+/* section7z */
+
 .section7-background{
     background-image: url("../images/section3-background.png");
     padding: 0;
@@ -498,11 +500,176 @@
     width: 32%;
 }
 
-/* section7z */
-
-
-
 /* end of section7z */
+
+/* section8z */
+
+.section8-background{
+    /* background-size: contain !important;
+    background-image: url("../images/section8-background.png");
+    background-repeat: no-repeat; */
+    padding: 0;
+}
+
+.section8-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section8-title p {
+    margin-bottom: 0;
+    
+}
+
+.section8-title > p {
+    font-weight: bold;
+    font-size: 32px;
+    background-color: #ef9c66;
+    padding: 15px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.199);
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.section8-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 6rem;
+    grid-row-gap: 2rem;
+}
+
+.section8-gallery div{
+    background-color: white;
+    border-radius: 20px;
+    height: 200px;
+    box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.199);
+    overflow: hidden;
+}
+
+.section8-gallery img{
+    max-height: 100%;
+    max-width: 100%;
+    
+}
+
+.section8-gallery div:nth-child(1){background-image: url("../images/20171.JPG");  background-position: center center;}
+.section8-gallery div:nth-child(2){background-image: url("../images/20172.JPG");  background-position: center center;}
+.section8-gallery div:nth-child(3){background-image: url("../images/20173.JPG");  background-position: center center;}
+.section8-gallery div:nth-child(4){background-image: url("../images/20181.JPG");  background-position: center center;}
+.section8-gallery div:nth-child(5){background-image: url("../images/20182.JPG");  background-position: center center;}
+.section8-gallery div:nth-child(6){background-image: url("../images/20183.JPG");  background-position: center center;}
+.section8-gallery div:nth-child(7){background-image: url("../images/20191.JPG");  background-position: center center;}
+.section8-gallery div:nth-child(8){background-image: url("../images/20192.JPG");  background-position: center center;}
+.section8-gallery div:nth-child(9){background-image: url("../images/20193.JPG");  background-position: center center;}
+.section8-gallery div:nth-child(10){background-image: url("../images/20201.JPG"); background-position: center center;}
+.section8-gallery div:nth-child(11){background-image: url("../images/20202.JPG"); background-position: center center;}
+.section8-gallery div:nth-child(12){background-image: url("../images/20203.JPG"); background-position: center center;}
+/* end of section8z */
+
+/* section9z */
+
+.section9-faqs{
+
+}
+
+.section9-faqs-content{
+    background-color: #ef9c66;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.178);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.section9-faqs-title{
+    display: flex;
+    flex-direction: row;
+}
+
+.section9-faqs-title > p{
+    margin-bottom: 0;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.section9-faqs-title img{
+    padding: 5px;
+    width: 28.8px;
+    height: 28.8px;
+    margin-right: 20px;
+}
+
+.section9-faqs-content div:last-child{
+    margin-top: 0px;
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 0;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.section9-faqs-content.active div:last-child{
+    max-height: 150px;
+    padding-top: 12px;
+}
+
+.section9-arrow{
+    transition: all 0.5s;
+}
+
+.section9-faqs-content.active .section9-faqs-title .section9-arrow{
+    transform: rotate(90deg);
+}
+
+/* end of section9z */
+
+/* contactusz */
+.contact-us-title{
+    position: relative;
+}
+
+.contact-us-title::before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    width: 30%;
+    height: 2px;
+    background-color: black;
+}
+
+.contact-us-socials{
+    margin-bottom: 20px;
+}
+
+.contact-us-socials-item{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.contact-us-socials-item img{
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.contact-us-socials-item p{
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #4e7cd8;
+    font-weight: bold;
+}
+
+/* end of contactusz */
 
 .medpar-sponsor-class {
     display: flex;
